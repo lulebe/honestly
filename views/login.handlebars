@@ -3,23 +3,35 @@
 {{/if}}
 
 <form action="/loginuser" method="POST">
-  <fieldset class="sw-form">
-    <legend>Login</legend>
-    <label for="loginusr"><small>Username</small></label><br>
-    <input type="text" id="loginusr" name="username" placeholder="Tom"><br><br>
-    <label for="loginpw"><small>Password</small></label><br>
-    <input type="password" id="loginpw" name="password" placeholder="*****"><br><br>
-    <button type="submit">Login</button>
-  </fieldset>
+  <div class="card sw-form">
+    <div class="card-title">
+      <span>Login</span>
+    </div>
+    <div class="card-content">
+      <label for="loginusr"><small>Username</small></label><br>
+      <input type="text" id="loginusr" name="username" placeholder="Tom"><br><br>
+      <label for="loginpw"><small>Password</small></label><br>
+      <input type="password" id="loginpw" name="password" placeholder="*****">
+    </div>
+    <div class="card-actions">
+      <button type="submit">Login</button>
+    </div>
+  </div>
 </form>
 <br><br><br>
 <form action="/createuser" method="POST">
-  <fieldset class="sw-form">
-    <legend>Create Account</legend>
-    <label for="signupusr"><small>Username</small></label><br>
+  <div class="card sw-form">
+    <div class="card-title">
+      <span>Create Account</span>
+    </div>
+    <div class="card-content">
+      <label for="signupusr"><small>Username</small></label><br>
     <input type="text" id="signupusr" name="username" placeholder="Tom"><br><br>
     <label for="signuppw"><small>Password</small></label><br>
-    <input type="password" id="signuppw" name="password" placeholder="*****"><br><br>
-    <button type="submit">Sign Up</button>
-  </fieldset>
+    <input type="password" id="signuppw" name="password" placeholder="*****">
+    </div>
+    <div class="card-actions">
+      <button type="submit">Sign Up</button>
+    </div>
+  </div>
 </form>

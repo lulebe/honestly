@@ -18,21 +18,19 @@ a {
 a:hover {
   text-decoration: underline;
 }
-a:visited {
-  color: #a33;
-}
-
-.outer-wrapper {
+.main-wrapper {
   max-width: 800px;
   margin: 0 auto;
-}
-
-.main-wrapper {
   padding: 16px;
 }
-
+.navcontainer {
+  background: #a33;
+  color: white;
+  box-shadow: 0 -3px 5px 5px rgba(0,0,0,0.4);
+}
 nav {
-  border-bottom: 2px solid black;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 0 0 0 16px;
 }
 nav:after {
@@ -59,9 +57,10 @@ nav ul li a {
   text-decoration: none;
   display: block;
   padding: 0 16px;
+  color: white;
 }
 nav ul li a:hover {
-  background: #eee;
+  background: rgba(255, 255, 255, 0.2);
   text-decoration: none;
 }
 nav ul li a.btn {
@@ -114,7 +113,6 @@ fieldset {
 .sw-form {
   max-width: 400px;
   margin: 0 auto 16px auto;
-  border: 1px solid grey;
 }
 
 input[type=text], input[type=password] {
@@ -147,14 +145,21 @@ input[type=text]:focus, input[type=password]:focus {
 .card {
   background: white;
   box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-  padding: 16px;
   border-radius: 2px;
 }
-
+.card-title {
+  border-bottom: 1px solid grey;
+  padding: 8px 16px;
+}
+.card-title > span {
+  font-size: 1.5rem;
+}
+.card-content {
+  padding: 8px 16px;
+}
 .card-actions {
-  margin-top: 8px;
+  padding: 8px 16px;
   border-top: 1px solid grey;
-  padding-top: 8px;
   text-align: right;
 }
 
@@ -183,8 +188,13 @@ input[type=text]:focus, input[type=password]:focus {
   width: 100%;
   min-height: 60px;
   resize: vertical;
-  border: 1px solid #aaa;
+  border-style: solid;
+  border-color: #aaa;
+  border-width: 0 0 2px 0;
   padding: 4px;
-  border-radius: 4px;
   font-size: 0.9rem;
+  outline: none;
+}
+.message-input:focus {
+  border-color: #33a;
 }

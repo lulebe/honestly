@@ -9,10 +9,16 @@
 {{/if}}
 
 <form action="/user/{{user.id}}" method="POST">
-  <fieldset class="sw-form">
-    <legend>Write Message</legend>
-    <label for="msg"><small>Message</small></label><br>
-    <textarea id="msg" name="message" placeholder="Your Message" class="message-input" minlength="10"></textarea><br><br>
-    <button type="submit">Send</button>
-  </fieldset>
+  <div class="card sw-form">
+    <div class="card-title">
+      <span>Write Message</span>
+    </div>
+    <div class="card-content">
+      <label for="msg"><small>Message</small></label><br>
+      <textarea id="msg" name="message" placeholder="Your Message" class="message-input" minlength="10"></textarea>
+    </div>
+    <div class="card-actions">
+      <button type="submit">Send</button>
+    </div>
+  </div>
 </form>

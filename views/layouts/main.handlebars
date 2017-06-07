@@ -3,24 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#a33">
   <title>Honestly</title>
   <link rel="stylesheet" href="/static/main.css" />
 </head>
 <body>
-  <div class="outer-wrapper">
+  <div class="navcontainer">
     <nav>
       <h1>Honestly</h1>
       <ul>
         <li><a href="/">Home</a></li>
         {{#if loggedIn}}
           <li><a href="/users">Users</a></li>
-          <li><a href="/logout" class="btn">Logout</a><li>
+          <li><a href="/logout" class="btn secondary">Logout</a><li>
         {{/if}}
       </ul>
     </nav>
-    <div class="main-wrapper">
-      {{{body}}}
-    </div>
+  </div>
+  <div class="main-wrapper">
+    {{{body}}}
   </div>
 </body>
 </html>
