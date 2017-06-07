@@ -1,5 +1,5 @@
 {{#if hasError}}
-  <div class="error-message">{{error}}</div>
+  <div class="message error">{{error}}</div>
 {{/if}}
 
 <form action="/loginuser" method="POST">
@@ -8,7 +8,7 @@
     <label for="loginusr"><small>Username</small></label><br>
     <input type="text" id="loginusr" name="username" placeholder="Tom"><br><br>
     <label for="loginpw"><small>Password</small></label><br>
-    <input type="password" id="loginpw" name="password"><br><br>
+    <input type="password" id="loginpw" name="password" placeholder="*****"><br><br>
     <button type="submit">Login</button>
   </fieldset>
 </form>
@@ -19,7 +19,7 @@
     <label for="signupusr"><small>Username</small></label><br>
     <input type="text" id="signupusr" name="username" placeholder="Tom"><br><br>
     <label for="signuppw"><small>Password</small></label><br>
-    <input type="password" id="signuppw" name="password"><br><br>
+    <input type="password" id="signuppw" name="password" placeholder="*****"><br><br>
     <button type="submit">Sign Up</button>
   </fieldset>
 </form>
