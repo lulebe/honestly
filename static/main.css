@@ -70,6 +70,7 @@ nav ul li a.btn {
 }
 
 button, .btn, a.btn {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
   border: none;
   outline: none;
   display: inline-block;
@@ -78,10 +79,12 @@ button, .btn, a.btn {
   padding: 6px 12px;
   color: white;
   line-height: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   transition: box-shadow 0.1s ease-out;
   cursor: pointer;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
 }
 button:hover, .btn:hover {
   background: #b44;
@@ -92,13 +95,15 @@ button:active, .btn:active {
   box-shadow: 0 5px 12px rgba(0,0,0,0.4);
 }
 button.secondary, .btn.secondary {
-  background: #777;
+  background: #fff;
+  color: #333;
 }
 button.secondary:hover, .btn.secondary:hover {
-  background: #888;
+  background: #fff;
+  color: #000;
 }
 button.secondary:active, .btn.secondary:active {
-  background: #999;
+  background: #fff;
 }
 
 fieldset {
