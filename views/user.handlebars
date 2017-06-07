@@ -1,0 +1,18 @@
+<h3>{{user.name}}</h3>
+
+<p>
+  Here you can send a message to {{user.name}}. Be careful what you write, you can't edit your message later because it's anonymous.
+</p>
+
+{{#if msgSuccess}}
+  <div class="error-message">Your Message was sent!</div>
+{{/if}}
+
+<form action="/user/{{user.id}}" method="POST">
+  <fieldset class="sw-form">
+    <legend>Write Message</legend>
+    <label for="msg"><small>Message</small></label><br>
+    <textarea id="msg" name="message" placeholder="Your Message" class="message-input" minlength="10"></textarea><br><br>
+    <button type="submit">Send</button>
+  </fieldset>
+</form>

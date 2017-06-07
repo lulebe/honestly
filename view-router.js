@@ -1,0 +1,25 @@
+const router = require('express').Router()
+
+const home = require('./routes/home')
+const logout = require('./routes/logout')
+const deleteAccount = require('./routes/deleteAccount')
+const loginForm = require('./routes/loginForm')
+const createUser = require('./routes/createUser')
+const loginUser = require('./routes/loginUser')
+const listUsers = require('./routes/listUsers')
+const showUser = require('./routes/showUser')
+const createMessage = require('./routes/createMessage')
+const deleteMessage = require('./routes/deleteMessage')
+
+module.exports = router
+
+router.get('/', home)
+router.get('/logout', logout)
+router.get('/deleteuser', deleteAccount)
+router.get('/login', loginForm)
+router.post('/createuser', createUser)
+router.post('/loginuser', loginUser)
+router.get('/users', listUsers)
+router.get('/user/:userId', showUser)
+router.post('/user/:userId', createMessage)
+router.get('/deletemessage/:messageId', deleteMessage)
